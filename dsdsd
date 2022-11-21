@@ -1,0 +1,34 @@
+class Profile:
+    ##atributos##
+    #
+    ##fin atributos##
+    def __init__(self,id,nickname,avatar,status,created_at,mail,is_premium=False):
+        self.id=id
+        self.nickname=nickname
+        self.avatar=avatar
+        self.status=status
+        self.created_at=created_at
+        self.mail=mail
+        self.is_premium=is_premium
+
+    
+    def imprimir(self):
+        print("El objeto id es:",self.id)
+        print("El nickname es:",self.nickname)
+        print("El avatar es:",self.avatar)
+        print("El status es:",self.status)
+        print("El fecha de creacion es:",self.created_at)
+        print("El correo es:",self.mail)
+        print("Cuenta on nitro:" ,self.is_premium)
+
+
+
+from dx import Profile
+
+def main():
+
+    profile=Profile(1,"mmmmmm", "rgb.png","conectado","28-10-2002","hola@hola.com",True)
+
+    profile.imprimir()
+
+main() 
